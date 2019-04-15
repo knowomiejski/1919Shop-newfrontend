@@ -1,0 +1,16 @@
+<nav class="nav-bar">
+  <div class="nav-container">
+    <div class="btn-nav-container">
+      <button class="default-button" [routerLink]="'/home'"><i class="material-icons">home</i><br>Home</button>
+      <button class="default-button" [routerLink]="'/categories'"><i class="material-icons">border_all</i><br>Categories</button>
+      <button (click)="shop()" class="default-button" [routerLink]="'/shop'"><i class="material-icons">euro</i><br>All Items</button>
+    </div>
+    <div class="btn-login-container">
+      <button *ngIf="!loggedIn"class="default-button left" [routerLink]="'/login'"><i class="material-icons">person</i><br>Login</button>
+      <button *ngIf="!loggedIn"class="default-button right" [routerLink]="'/register'"><i class="material-icons">person_add</i><br>Register</button>
+      <button *ngIf="loggedIn" class="default-button left" [routerLink]="'/cart'"><i class="material-icons">shopping_cart</i><br>Basket</button>
+      <button *ngIf="isAdmin" class="default-button right" [routerLink]="'/home'"><i class="material-icons">add_box</i><br>Add Product</button>
+      <button (click)="logout()" *ngIf="loggedIn" class="default-button" [routerLink]="'/home'"><i class="material-icons">person_outline</i><br>Logout</button>
+    </div>
+  </div>
+</nav>

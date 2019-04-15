@@ -1,0 +1,15 @@
+<div class="product-cart-container">
+  <div class="cartlist">
+    <ul>
+      <app-cart-product *ngFor="let cartproduct of cartlistfilterd; let i = index;"
+                        [cartproduct]="cartproduct"></app-cart-product>
+    </ul>
+    <div class="total">
+      <h3>{{message}}</h3>
+      <h3>Total: {{totalPrice}}</h3>
+    </div>
+    <div class="btn-wrapper">
+      <button class="default-button checkout" (click)="onCheckout()">Checkout</button>
+    </div>
+  </div>
+</div>

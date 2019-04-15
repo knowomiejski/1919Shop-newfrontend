@@ -1,0 +1,90 @@
+.categories {
+  display: flex;
+  justify-content: center;
+  transition: .5s ease;
+}
+
+.cat-strat {
+  background-image: url("src/assets/images/cat-strat.jpg");
+}
+
+.cat-lespaul{
+  background-image: url("src/assets/images/cat-lespaul.jpg");
+}
+
+.cat-acoustic {
+  background-image: url("src/assets/images/jonny-cash_acoustic.jpg");
+
+}
+
+.cat-strat, .cat-lespaul, .cat-acoustic {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+}
+
+.product-content-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-container:hover {
+  zoom: 100%;
+}
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+
+
+.cat-strat {
+  filter: grayscale(0%);
+}
+
+.cat-lespaul .cat-acoustic {
+  filter: grayscale(0%);
+}
+
+.cat-acoustic {
+  filter: grayscale(0%);
+}
+
+
+
+.categories:hover > .cat-strat {
+  filter: contrast(40%);
+}
+
+.categories:hover > .cat-lespaul {
+  filter: contrast(40%);
+}
+
+.categories:hover > .cat-acoustic {
+  filter: contrast(40%);
+}
+
+
+
+.categories:hover > .cat-strat:hover {
+  transition: .5s ease;
+  filter: contrast(110%);
+}
+
+.categories:hover > .cat-lespaul:hover {
+  transition: .5s ease;
+  filter: contrast(110%);
+}
+
+.categories:hover > .cat-acoustic:hover {
+  transition: .5s ease;
+  filter: contrast(110%);
+}
+
+@media (max-width:1000px) {
+  .categories {
+    display: block;
+  }
+}

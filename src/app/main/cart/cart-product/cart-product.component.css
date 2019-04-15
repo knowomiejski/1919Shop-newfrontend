@@ -1,0 +1,32 @@
+.product {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  border-bottom: solid 1px black;
+}
+
+.title h3 {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.title {
+  min-height: 70px;
+  min-width: 66.6%;
+  text-align: center;
+}
+
+.amount h3, .amount h4{
+  margin: 5px;
+  padding: auto;
+}
+
+.amount {
+  padding-top: 2px;
+  max-height: 70px;
+  min-width: 33.3%;
+  text-align: center;
+}

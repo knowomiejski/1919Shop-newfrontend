@@ -1,0 +1,32 @@
+<div class="login-form-container">
+  <div>
+    <h1>Register</h1>
+    <h4 class="message">{{message}}</h4>
+    <div class="email-container">
+      <input [(ngModel)]="email" type="email" placeholder="Email">
+    </div>
+    <div class="password-container">
+      <input [(ngModel)]="password1" type="password" placeholder="Password">
+    </div>
+    <div class="password-container">
+      <input [(ngModel)]="password2" type="password" placeholder="Repeat Password">
+    </div>
+    <div class="province-container">
+      <input [(ngModel)]="province" type="text" placeholder="Province">
+    </div>
+    <div class="city-container">
+      <input [(ngModel)]="city" type="text" placeholder="City">
+    </div>
+    <div class="street-container">
+      <input [(ngModel)]="street" type="text" placeholder="Street">
+    </div>
+    <div class="house-container">
+      <div class="housenr">
+        <input [(ngModel)]="housenr" class="housenrinput" type="number" placeholder="House Number">
+      </div>
+    </div>
+    <div class="btn-container">
+      <button (click)="onRegister()" class="default-button register-button" >Register</button>
+    </div>
+  </div>
+</div>

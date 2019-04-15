@@ -1,0 +1,23 @@
+<div class="product-container"
+     [style.background-image]="pictureSafe"
+     [style.background-size]="'cover'"
+     [style.background-position]="'center'"
+     [style.background-repeat]="'no-repeat'"
+>
+  <div class="product-content-container">
+    <div class="picture-container">
+    </div>
+    <div class="text-container">
+      <div class="product-title">
+        <h2>{{product.name}}</h2>
+      </div>
+      <div class="product-description">
+        <p>{{product.description}}</p>
+        <div class="prices">
+          <p class="price">&euro;{{product.price}}</p>
+          <button (click)="onAddToCart()" class="add-to-cart default-button">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

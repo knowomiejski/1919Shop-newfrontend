@@ -1,0 +1,16 @@
+<div class="login-form-container">
+  <div>
+    <h1>Login</h1>
+    <h4 class="message">{{message}}</h4>
+    <div class="email-container">
+      <input [(ngModel)]="email" type="email" placeholder="Email">
+    </div>
+    <div class="password-container">
+      <input [(ngModel)]="password" type="password" placeholder="Password">
+    </div>
+    <div class="btn-container">
+      <button (click) = "onClickLogin()" class="default-button login-button">Login</button>
+      <button class="default-button register-button" [routerLink]="'/register'" >Register</button>
+    </div>
+  </div>
+</div>

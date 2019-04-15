@@ -1,0 +1,7 @@
+<div class="product-list-container">
+  <h4 class="message">{{message}}</h4>
+  <app-product *ngFor="let product of filterd; let i = index;"
+  [style.flex-basis]="i%3 === 0 ?'100%' :'50%'"
+  [style.flex-grow]="i%3 === 0 ?'5' : '1'"
+  [product]="product"></app-product>
+</div>

@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(rgba(200, 200, 200, 0), rgba(200, 200, 200, 0)), url("assets/images/guitar_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+p, h1, h2 {
+  margin: 2%;
+  padding: 4px;
+}
+
+.default-button {
+  outline: none;
+  text-align: center;
+  font-weight: bold;
+  min-width: 100px;
+  margin: 5px 10px;
+  padding: 6px 6px 8px 6px;
+  color: white;
+  background-color: #5F0670;
+  border-width:0 0 2px 0;
+  border-color: #440044;
+  flex-grow: 3;
+}
+
+.default-button:hover, .default-button:focus {
+  background-color: #6C067D;
+}
+
+.default-button:active{
+  background-color: #404;
+}
+
+

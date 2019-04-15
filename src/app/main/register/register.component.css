@@ -1,0 +1,48 @@
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.message {
+  text-align: center;
+  color: #6C067D;
+}
+
+input {
+  min-width: 500px;
+  border: 0;
+  border-radius: 4px;
+  margin: 0;
+  margin-left: -10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+}
+
+.login-button {
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.register-button {
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+@media (max-width: 750px) {
+  input {
+    min-width: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  input {
+    min-width: 200px;
+  }
+}

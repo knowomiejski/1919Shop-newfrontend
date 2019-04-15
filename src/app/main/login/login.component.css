@@ -1,0 +1,57 @@
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+input {
+  width: 100%;
+  min-width: 500px;
+  border: 0;
+  padding: 10px;
+  margin-left: -10px;
+  border-radius: 4px;
+}
+
+.message {
+  text-align: center;
+  color: #6C067D;
+}
+
+.email-container, .password-container {
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-button {
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.register-button {
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+@media (max-width: 750px) {
+  input {
+    min-width: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  input {
+    min-width: 200px;
+  }
+
+  .btn-container {
+    padding: 0;
+  }
+}

@@ -1,0 +1,32 @@
+.product-list-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-content: stretch;
+  transition: .5s ease;
+}
+
+.message {
+  text-align: center;
+  color: #6C067D;
+}
+
+app-product {
+  flex-basis: 50%;
+  filter: grayscale(0%);
+}
+
+.product-list-container:hover > app-product{
+  filter: contrast(50%);
+}
+
+.product-list-container:hover > app-product:hover{
+  transition: .5s ease;
+  filter: contrast(100%);
+}
+
+@media (max-width: 700px) {
+  app-product {
+    min-width: 100%;
+  }
+}

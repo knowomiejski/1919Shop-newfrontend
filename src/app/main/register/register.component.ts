@@ -11,15 +11,15 @@ import {Router} from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
 
-  private email = '';
-  private password1 = '';
-  private password2 = '';
-  private province = '';
-  private city = '';
-  private street = '';
-  private housenr = '';
-  private message = '';
-  private registerModel: RegisterModel;
+  email = '';
+  password1 = '';
+  password2 = '';
+  province = '';
+  city = '';
+  street = '';
+  housenr = '';
+  message = '';
+  registerModel: RegisterModel;
 
   constructor(private httpClientService: HttpClientService, private authService: AuthService, private router: Router) {
   }

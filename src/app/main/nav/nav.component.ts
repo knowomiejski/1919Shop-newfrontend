@@ -10,8 +10,8 @@ import {Router} from '@angular/router';
 })
 export class NavComponent implements OnInit {
 
-  private loggedIn: boolean;
-  private isAdmin: boolean;
+  loggedIn: boolean;
+  isAdmin: boolean;
 
   constructor(private authService: AuthService, private categoryService: CategoryService, private router: Router) {
   }

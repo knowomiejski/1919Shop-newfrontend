@@ -11,9 +11,9 @@ import {CartService} from '../../services/cart.service';
 })
 export class LoginComponent implements OnInit {
 
-  private email: string;
-  private password: string;
-  private message: string;
+  email: string;
+  password: string;
+  message: string;
 
   constructor(private authService: AuthService, private httpClientService: HttpClientService,
               private router: Router, private cartService: CartService) {

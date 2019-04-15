@@ -14,8 +14,8 @@ export class CartComponent implements OnInit {
 
   totalPrice = 0;
   private cartlist: ProductModel[] = [];
-  private cartlistfilterd: CartproductModel[] = [];
-  private message: string;
+  cartlistfilterd: CartproductModel[] = [];
+  message: string;
 
   constructor(private authService: AuthService, private cartService: CartService, private httpClientService: HttpClientService) {
 

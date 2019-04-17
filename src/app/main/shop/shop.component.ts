@@ -23,7 +23,6 @@ export class ShopComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('BEGINNING: ' + this.categoryService.category);
     this.productService.loadProducts();
     this.productService.currentProductList.subscribe((status: string) => {
       if (status === 'loaded') {
@@ -32,7 +31,6 @@ export class ShopComponent implements OnInit {
         if (this.categoryService.category === 'reload') {
           this.filterd = this.productlist;
           this.message = '';
-          console.log(this.categoryService.category + ' category in if!');
         }
       }
     });
@@ -42,14 +40,10 @@ export class ShopComponent implements OnInit {
       if (this.categoryService.category === 'reload') {
         this.filterd = this.productlist;
         this.message = '';
-        console.log('in the reload on init');
       } else {
         this.filterByCategory();
       }
     });
-
-    console.log('END: ' + this.categoryService.category);
-
   }
 
   filterByCategory() {

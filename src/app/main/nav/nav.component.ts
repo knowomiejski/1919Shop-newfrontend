@@ -34,7 +34,6 @@ export class NavComponent implements OnInit {
   }
 
   shop() {
-    console.log('click');
     this.categoryService.activeCategory.next('reload');
   }
 }

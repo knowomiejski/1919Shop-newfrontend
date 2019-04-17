@@ -33,14 +33,11 @@ export class AuthService {
 
   login(email, password) {
     this.isLoggedIn.next(1);
-    console.log('in authService Login');
     this.httpClientService.login(email, password).subscribe(
       user => {
-        console.log('got user');
         this._loggedInUser = user;
       },
       () => {
-        console.log('Wrong Email or Password');
         this.isLoggedIn.next(2);
       },
       () => {
@@ -49,7 +46,6 @@ export class AuthService {
 
     this.isLoggedIn.subscribe(meme => {
       if (meme === 3) {
-        console.log(this.loggedInUser.roles);
         if (this.loggedInUser.roles.indexOf('Admin') > -1) {
           this.role.next(true);
         } else {
@@ -63,7 +59,6 @@ export class AuthService {
     this.httpClientService._header = undefined;
     this.cartService.clearList();
     localStorage.clear();
-    console.log('After logout: ' + this.cartService.cartlist);
     this._loggedInUser = undefined;
     this.isLoggedIn.next(1);
     this.role.next(false);

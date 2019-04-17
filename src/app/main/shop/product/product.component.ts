@@ -34,7 +34,6 @@ export class ProductComponent implements OnInit {
         this.cartService.cartsubject.next(this.product);
       });
     } else {
-      console.log('add to cart ' + this.product.productID);
         this.router.navigate(['/login']);
     }
   }

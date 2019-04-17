@@ -23,7 +23,6 @@ export class ProductService {
       this.currentProductList.next('loaded');
     }, () => {
       this.currentProductList.next('error');
-      console.log('cant retrieve items');
     });
   }
 

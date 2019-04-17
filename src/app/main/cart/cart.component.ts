@@ -23,7 +23,6 @@ export class CartComponent implements OnInit {
 
   ngOnInit() {
     this.cartlist = this.cartService.cartlist;
-    console.error('before filtering' + this.cartlist);
     this.cartlistfilterd = this.sortList();
     this.totalPrice = this.calculatePrice();
 
@@ -32,7 +31,6 @@ export class CartComponent implements OnInit {
         this.cartlist = [];
       } else {
         this.cartlist = this.cartService.cartlist;
-        console.error('after filtering' + this.cartlist);
         this.cartlistfilterd = this.sortList();
         this.totalPrice = this.calculatePrice();
       }
@@ -62,7 +60,6 @@ export class CartComponent implements OnInit {
 
     temparray.forEach((meme: CartproductModel) => {
       meme.amount = count[meme.product.productID];
-      console.log('the title is: ' + meme.product.name + '\n' + 'the amount is: ' + meme.amount);
     });
     return temparray;
   }

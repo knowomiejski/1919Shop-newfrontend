@@ -23,7 +23,6 @@ export class LoginComponent implements OnInit {
   }
 
   onClickLogin() {
-    console.log('in onClickLogin ' + this.email + '    ' + this.password);
     this.authService.isLoggedIn.subscribe(login => {
       if (login === 3) {
         this.httpClientService.getCartProducts(this.email, this.password).subscribe(cartlist => {

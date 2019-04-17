@@ -12,7 +12,7 @@ import {MessageModel} from '../models/message.model';
 export class HttpClientService {
 
   public _header;
-  private url = 'http://localhost:8080/api';
+  private url = 'https://knowo.nl:8080/api';
 
   constructor(private http: HttpClient) {
   }
@@ -25,7 +25,6 @@ export class HttpClientService {
         'Authorization': 'Basic ' + btoa(email + ':' + password)
       }),
     };
-    console.log(httpOptions.headers.getAll('Authorization') + '   ' + email + '  ' + password);
     this._header = httpOptions;
     return httpOptions;
   }

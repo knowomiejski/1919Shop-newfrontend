@@ -42,7 +42,6 @@ export class RegisterComponent implements OnInit {
     } else {
       if (this.password1 === this.password2 &&
         this.password1.match('^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{8,}$')) {
-        console.log('allo');
         this.registerModel = new RegisterModel(this.email, this.password1, this.province, this.city, this.street, this.housenr);
         this.httpClientService.register(this.registerModel).subscribe(user => {
           this.authService.login(this.email, this.password1);

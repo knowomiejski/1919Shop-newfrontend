@@ -15,9 +15,7 @@ export class CartService {
   }
 
   clearList() {
-    console.log('Cartlist in clearList BEFORE: ' + this.cartlist);
     this.cartlist = [];
-    console.log('Cartlist in clearList AFTER: ' + this.cartlist);
     this.cartsubject = new Subject();
     this.cartsubject.asObservable();
     this.cartsubject.subscribe(product => {
